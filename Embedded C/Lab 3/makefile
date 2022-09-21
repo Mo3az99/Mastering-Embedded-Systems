@@ -17,6 +17,7 @@ all: $(Project_name).bin
 
 $(Project_name).elf: $(OBJ) $(AsOBJ)
 	$(CC)ld.exe -T linker_script.ld  $(LIBS) $(OBJ) $(AsOBJ) -o $@ -Map=Map_file.map
+	cp $(Project_name).elf $(Project_name).axf
 
 $(Project_name).bin: $(Project_name).elf
 	$(CC)objcopy.exe -O binary $< $@

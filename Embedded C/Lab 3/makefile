@@ -7,7 +7,7 @@ SRC=$(wildcard *.c)
 OBJ=$(SRC:.c=.o)
 As=$(wildcard *.s)
 AsOBJ=$(As:.s=.o)
-Project_name=learn_in_depth_cortex_m4
+Project_name=unit3_lab4_cortexM4
 
 all: $(Project_name).bin
 	@echo "======== Build is Done ========"

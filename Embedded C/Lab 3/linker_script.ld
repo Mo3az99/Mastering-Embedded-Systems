@@ -6,8 +6,8 @@ ENTRY(.text)
 
 MEMORY
 {
-flash(rx) : ORIGIN = 0x08000000, LENGTH = 512M 
-sram(rwx) : ORIGIN = 0x20000000, LENGTH = 512M
+flash(rx) : ORIGIN = 0x0000000, LENGTH = 512M 
+sram(rwx) : ORIGIN = 0x2000000, LENGTH = 512M
 }
 
 SECTIONS
